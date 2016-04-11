@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS `` (
-
-  PRIMARY KEY (`id`)
-)
-  ENGINE = InnoDB
-  DEFAULT CHARSET = 'utf8'

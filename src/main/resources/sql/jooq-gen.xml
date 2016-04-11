@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.7.0.xsd">
+    <jdbc>
+        <driver>com.postgres.jdbc.Driver</driver>
+        <url>jdbc:postgres://localhost:9982</url>
+        <user>postgres</user>
+        <password>postgres</password>
+    </jdbc>
+    <generator>
+        <database>
+            <name>org.jooq.util.postgres.PostgresDatabase</name>
+            <includes>.*</includes>
+            <inputSchema>db-theatre</inputSchema>
+        </database>
+        <target>
+            <packageName>me.achumak.theater.db.jooq</packageName>
+            <directory>src/main/java</directory>
+        </target>
+    </generator>
+</configuration>
