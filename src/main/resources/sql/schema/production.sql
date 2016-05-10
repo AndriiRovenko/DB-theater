@@ -1,6 +1,6 @@
 CREATE TYPE CATEGORY AS ENUM ('clothes', 'makeup', 'scenery');
 
-CREATE TABLE IF NOT EXISTS agent (
+CREATE TABLE IF NOT EXISTS production (
   id       INT         NOT NULL,
   category CATEGORY    NOT NULL,
   name     VARCHAR(64) NOT NULL,
