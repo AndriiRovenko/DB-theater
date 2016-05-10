@@ -2,15 +2,15 @@
 <configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.7.0.xsd">
     <jdbc>
         <driver>com.postgres.jdbc.Driver</driver>
-        <url>jdbc:postgres://localhost:9982</url>
-        <user>postgres</user>
+        <url>jdbc:postgres://192.168.1.130:5432</url>
+        <user>andrew</user>
         <password>postgres</password>
     </jdbc>
     <generator>
         <database>
             <name>org.jooq.util.postgres.PostgresDatabase</name>
             <includes>.*</includes>
-            <inputSchema>db-theatre</inputSchema>
+            <inputSchema>theatre</inputSchema>
         </database>
         <target>
             <packageName>me.achumak.theater.db.jooq</packageName>
